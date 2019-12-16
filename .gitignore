@@ -4,6 +4,7 @@
 *.fls
 *.log
 *.out
+*.gz
 *.swp
 *.swo
 *.o
