@@ -1,4 +1,9 @@
-main
+*.aux
+*embedded.tex
+*.fdb_latexmk
+*.fls
+*.log
+*.out
 *.swp
 *.swo
 *.o
