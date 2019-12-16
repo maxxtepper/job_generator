@@ -1,0 +1,141 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[10pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% modern themes
+\moderncvstyle{banking}                            % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{darkteal}                                % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.75,bmargin=4cm,footnotesep=3cm]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+\usepackage{import}
+\usepackage{helvet}
+% personal data
+\name{Maxx}{Tepper}
+\title{Hardware Engineer}                               % optional, remove / comment the line if not wanted
+\address{11748 Kiowa Ave\#1}{Los Angeles, CA 90049}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+\phone[mobile]{(661) 803-8704}                   % optional, remove / comment the line if not wanted
+\email{maxxtepper@gmail.com}                               % optional, remove / comment the line if not wanted
+\homepage{www.linkedin.com/in/maxxtepper/}                         % optional, remove / comment the line if not wanted
+\homepagex{www.github.com/maxxtepper/}                 % optional, remove / comment the line if not wanted
+%\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\quote{Some quote}                                 % optional, remove / comment the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+\small{Lead engineer responsible for the UCLA High Energy Physics Group's design of FPGA-based high-speed data processing cards for the CERN laboratory in Geneva, Switzerland}\\
+
+\section{Technical Skills}
+
+\vspace{6pt}
+
+\begin{itemize}
+
+\item \textbf{Electronics Design:} OrCAD Capture CIS and Allegro; Experienced in the design of custom digital circuitry with FPGAs, high-speed optical transceivers, multi-GHz SerDes, DDR interface, clock networks, ethernet, USB 2/3, SATA, DisplayPort, UART, I2C, SPI, JTAG
+\vspace{6pt}
+
+\item \textbf{Electronics Testing and Debugging:} Experienced in testing and debugging digital and analog circuitry using equipment such as oscilloscopes, function generators, DVM, and soldering
+\vspace{6pt}
+
+\item \textbf{Programming and Software:} Experienced in C/C++, ROOT, MSOffice. Some experience in Python, CUDA, Bash, Git, LaTeX, SQL
+\vspace{6pt}
+
+\end{itemize}
+
+\section{Relevant Experience}
+
+\vspace{6pt}
+
+\begin{itemize}
+
+\item{\cventry{August 2017--Present}{UCLA High Energy Physics}{Hardware Development Engineer}{Los Angeles, CA}{}{\vspace{3pt}Responsible for the development of printed circuit boards following the AdvancedTCA specification for future upgrades to the CMS Barrel Muon Phase-2 trigger, organized and operated by CERN}
+\begin{itemize}
+\item Worked with physicists and engineers to develop the system design and specifications
+\item Designed schematics and layout for a Xilinx Ultrascale+ FPGA, high-speed optical transcievers, DDR4 memory interface, and an ethernet switch, while meeting the standard for the AdvancedTCA specification
+\item Designed schematics and layout for prototype boards for high power voltage regulators, 28Gbps optical transceivers
+\item Tested and debugged prototype boards, iteratively making boards into a final working state
+\item Develop and upkeep embedded software framework for components such as power monitors and synthesizers
+\item Managed fabrication and assembly of prototype boards by facilitating all communications with manufacturers
+\item Setup test-benches, ordered equipment for the electronics lab space, and created and managed a CAD parts database using SQL (OrCAD Capture CIS)
+\end{itemize}
+}
+
+\vspace{6pt}
+
+\item{\cventry{August 2016--June 2017}{UCLA High Energy Physics}{Lab Assistant II}{Los Angeles, CA}{}{\vspace{3pt}Responsible for generating a new particle physics lab space for a new professor, and for assisting in the Electronics for Physical Measurements course for undergraduates of physics}
+\begin{itemize}
+\item Developed code for testing memory latency of GPU hardware, utilizing C++/CUDA libraries
+\item Purchased high-speed digital electronic equipment for research and development laboratory
+\item Assembled/disassembled and calibrated RF components for the Atlantic Impulsive Transient Antenna
+\item Assist students on build and diagnosing electronic circuits, along with testing and quizzing them on concepts as they work through the lab assignments
+\item Ensure supplies and equipment are prepared for each lab, ordering parts if necessary
+\end{itemize}
+}
+
+\vspace{6pt}
+
+
+\end{itemize}
+
+\vspace{2pt}
+
+\section{Education}
+
+\vspace{5pt}
+
+\begin{itemize}
+
+\item{\cventry{August 2013--December 2015}{University of California, Los Angeles}{Bachelor of Science in Physics and Minor in Mathematics}{Los Angeles}{\textit{GPA: 3.2/4.0}}{}
+}
+
+\end{itemize}
+
+%\nocite{*}
+%\bibliographystyle{plain}
+%\bibliography{publications}                        % 'publications' is the name of a BibTeX file
+
+% Publications from a BibTeX file using the multibib package
+%\section{Publications}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}                   % 'publications' is the name of a BibTeX file
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}                   % 'publications' is the name of a BibTeX file
+
+%-----       letter       ---------------------------------------------------------
+
+\end{document}
+
+
+%% end of file `template.tex'.

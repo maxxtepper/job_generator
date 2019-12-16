@@ -1,0 +1,74 @@
+%% start of file `template.tex'.
+
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{banking}                            % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+
+\moderncvcolor{darkteal}                                % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'teal', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+%\usepackage[scale=0.75]{geometry}
+\usepackage[scale=0.75, reset, letterpaper, height=9.8in, width=6.5in, hmarginratio=1:1, vmarginratio=1:1, marginparsep=0pt, marginparwidth=0pt, headheight=10pt]{geometry}
+%\usepackage[scale=0.75,bmargin=5cm,footnotesep=1cm]{geometry}
+%\patchcmd{\makeletterclosing}{[4em]}{[4em]}{}{}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+%change the font
+\usepackage{helvet}
+
+% personal data
+\name{Maxx}{Tepper}
+\title{Hardware Engineer}                               % optional, remove / comment the line if not wanted
+\address{11748 Kiowa Ave\#1}{Los Angeles, CA 90049}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+\phone[mobile]{(661) 803-8704}                   % optional, remove / comment the line if not wanted
+\email{maxxtepper@gmail.com}                               % optional, remove / comment the line if not wanted
+\homepage{www.linkedin.com/in/maxxtepper/}                         % optional, remove / comment the line if not wanted
+\homepagex{www.github.com/maxxtepper/}                         % optional, remove / comment the line if not wanted
+\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+\quote{Some quote}                                 % optional, remove / comment the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%-----       letter       ---------------------------------------------------------
+% recipient data
+\recipient{Apple}{Recruiting and HR\\Cupertino, CA}
+\date{December 15, 2019}
+\opening{Dear Apple Recruiter,}
+\closing{Sincerely,}
+%\enclosure[Attached]{curriculum vit\ae{}}          % use an optional argument to use a string other than "Enclosure", or redefine \enclname
+\makelettertitle
+
+Technological evolution is the constant strand of thought that my mind takes on every day. It is astounding to consider what has happened with humanity in only the past 44 years. From 1976 to now, we have seen what is possible when computer technology is free to grow into something unimaginable. My passion for this growth has lead me to become a full life cycle hardware engineer developing FPGA based high-speed digital circuit boards for the UCLA High Energy Physics Group. The ongoing nature of Apple will continue to usher in new eras of human innovation by providing the tools that will be at the forefront of every major discovery and development towards science and technology for the foreseeable future. It is my mission to see this technology come to life, and to be cause in what creations will come of it.
+
+In my current position at UCLA, I design high-speed digital electronics for the Compact Muon Solenoid, one of the biggest particle detectors at CERN's Large Hadron Collider in Geneva, Switzerland. I am responsible for managing and executing all aspects of hardware development -- including board design, schematic entry, printed circuit board layout, fabrication and assembly coordination, test bench setup, and testing and debugging -- while working with physicists and engineers to ensure that the design of the boards fulfills the requirements of the experiment. I am capable of designing, developing, and testing hardware which include, but is not limited to, power components, MPSoC FPGA's, DDR4 memory, Ethernet, I2C, SPI, and multi-GHz Serdes transceivers. Learned from this experience was the value of working and communicating with a team of experts across disciplines to create something no one could create alone.
+
+Outside of my current position, I have undergone an extensive personal and professional growth and development curriculum that grants me the ability to maintain open and integrous communicative relationships based not on the subjective meanings of things, but on what is objectively so. All human beings are incredibly powerful, occasionally succumbing to reaction, especially in teams filled with passion, differing opinions, and unlimited creativity. I look to cultivate an environment where people are free to be fully self-expressed under any circumstance while standing for the win of every team member. I am left thrilled at the prospect of partnering with the leaders heading the development of Apple's technology in this way.
+
+From design, through construction, to production, I seek a higly abstract role at Apple to engage in some of the greatest conversations in its history, and it is my dream to be at the head of every conversation. Thank you for considering my application, and I look forward to discussing this opportunity of joining Apple's peak pursuit into the future of technology.
+
+
+\makeletterclosing
+
+\end{document}
+
+
+%% end of file `template.tex'.
